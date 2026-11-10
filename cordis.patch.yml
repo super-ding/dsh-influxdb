@@ -1,0 +1,11 @@
+# @super-ding/dsh-influxdb bundle patch: one row, both halves (Host tools + routes, Client panel).
+- insert:
+    - id: dsh-influxdb
+      # Must be the published package name: the loader imports this specifier.
+      # Quoted because YAML reserves a leading '@' in plain scalars.
+      name: "@super-ding/dsh-influxdb"
+      config:
+        connections: []
+        allowWrite: false
+        timeoutMs: 30000
+        maxRows: 200

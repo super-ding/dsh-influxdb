@@ -1,0 +1,38 @@
+{
+  "name": "@super-ding/dsh-influxdb",
+  "version": "1.1.0",
+  "description": "InfluxDB 2.x for DeepSeek Harness: run Flux queries, inspect schemas, manage connections, and write line protocol from agent tools and a side panel.",
+  "type": "module",
+  "main": "./index.js",
+  "bin": { "dsh-influxdb-mcp": "./mcp-server.mjs" },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./mcp": "./mcp-server.mjs",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": ["index.js", "client.js", "mcp-server.mjs", "cordis.patch.yml", "locale/*.json", "icon.svg", "assets/icon-180.png", "screenshots.json", "README.md", "LICENSE"],
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "influxdb", "flux", "timeseries", "mcp"],
+  "license": "MIT",
+  "author": "super-ding",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/super-ding/dsh-influxdb.git"
+  },
+  "homepage": "https://github.com/super-ding/dsh-influxdb#readme",
+  "bugs": {
+    "url": "https://github.com/super-ding/dsh-influxdb/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-slots"]
+    }
+  }
+}

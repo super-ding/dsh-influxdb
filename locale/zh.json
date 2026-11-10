@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "InfluxDB",
+    "description": "连接 InfluxDB 2.x：执行 Flux 查询、查看 schema 与 bucket、编写 Flux、管理连接，并提供侧边面板。"
+  },
+  "panel": {
+    "title": "InfluxDB",
+    "subtitle": "Flux 查询与连接管理"
+  }
+}

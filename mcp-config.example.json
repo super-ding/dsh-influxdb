@@ -1,0 +1,17 @@
+{
+  "connections": [
+    {
+      "id": "local",
+      "label": "Local InfluxDB",
+      "url": "http://127.0.0.1:8086",
+      "org": "my-org",
+      "bucket": "metrics",
+      "token": "",
+      "tokenEnv": "INFLUX_TOKEN",
+      "default": true
+    }
+  ],
+  "allowWrite": false,
+  "timeoutMs": 30000,
+  "maxRows": 200
+}

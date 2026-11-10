@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "title": "InfluxDB",
+    "description": "Connect to InfluxDB 2.x: run Flux queries, inspect schemas and buckets, author Flux scripts, and manage connections from a side panel."
+  },
+  "panel": {
+    "title": "InfluxDB",
+    "subtitle": "Flux queries and connections"
+  }
+}

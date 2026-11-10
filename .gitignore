@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# local connection config — may contain a plaintext InfluxDB token
+mcp-config.json
+.env
+.env.*
+
+# local notes / OS noise
+*.log
+.DS_Store
+Thumbs.db
